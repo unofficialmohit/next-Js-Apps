@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: blueviolet;
+    padding: 10px;
+}
+
+.sitename {
+    font-size: 3em;
+    font-weight: bolder;
+    color: white;
+}
+
+.end {
+    font-size: 1em;
+    color: white;
+}
+
+.meme {
+    margin: 40px auto;
+    text-align: center;
+    width: 80%;
+}
+
+.textfield {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    font-size: large;
+}
+
+.userinput, .submit {
+    padding: 10px;
+    font-size: large;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.userinput {
+    width: 80%;
+}
+
+.submit {
+    width: 90%;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+}
+
+.memepic {
+    position: relative;
+    width:50%;
+    margin: 50px auto;
+   
+}
+
+.memeImage {
+    width: 80%;
+    text-align: center;
+
+}
+
+.text {
+    position: absolute;
+    padding: 0 30px;
+    width: 80%;
+    left: 50%;
+    font-weight: 700;
+    font-size: 3.5em;
+    color: white;
+    transform: translateX(-50%);
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.top {
+    top: 12%;
+}
+
+.bottom {
+    bottom: 12%;
+}
+
+@media screen and (max-width: 768px) {
+    .sitename {
+        font-size: 2em;
+    }
+
+    .textfield {
+        flex-direction: column;
+    }
+
+    .userinput, .submit {
+        width: 100%;
+    }
+    .memepic,.memeImage{
+        width: 100%;
+    }
+    .text {
+        font-size: 2em;
+    }
+}
